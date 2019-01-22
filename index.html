@@ -31,13 +31,14 @@
 
         header {
           height: 90px;
-          width: 800px;
+          width: fillwwww;
           margin-right: 0px;
-          kkkmargin-left: 180px;
+          xxmargin-left: calc(180px + 5%);
           float: left;
           padding: 10px 20px;
           background-color: #e1e8f4; 
-
+  display: flex;
+  lllflex-wrap: nowrap;
         }
      
         header navbar {
@@ -66,10 +67,31 @@
 
         #right-bar {
             float: right;
-            width: 200px;
-            height: 400px;
+            width: 300px;
+            xxxheight: 400px;
             background-color: ;
         }
+
+        table {
+  
+        }
+
+        table, th, td {
+          xxxborder: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          xxxpadding: 5px;
+          text-align: left;
+          min-width: 150px;
+        }
+
+        #contents-list {
+          width: 450px;
+        }
+        ol { counter-reset: item }
+        li{ display: block }
+        li:before { content: counters(item, ".") " "; counter-increment: item }
 
     </style>
 </head>
@@ -140,7 +162,73 @@
     </main>
 
     <aside id="right-bar">
+
+      <table style="width:100%" >
+        <caption>HTML 5 <br>
+      (HyperText Markup Language)</caption>
+        <tr>
+          <th>Filename extension</th>
+          <td>.html, .htm</td>
+        </tr>
+        <tr>
+          <th>Internet media type</th>
+          <td>text/html</td>
+        </tr>
         
+        <tr>
+          <th>Type code</th>
+          <td>TEXT</td>
+        </tr>
+        <tr>
+          <th>Uniform Type Identifier (UTI)</th>
+          <td>public.html[1]</td>
+        </tr>
+        
+        <tr>
+          <th>Initial release</th>
+          <td>28 October 2014 (4 years ago)[2]</td>
+        </tr>
+        <tr>
+          <th>Extended to</th>
+          <td>XHTML 5 (XML-serialized HTML 5)</td>
+        </tr>
+        
+        <tr>
+          <th>Standard</th>
+          <td>  HTML 5.2 Recommendation (W3C); HTML Living Standard (WHATWG)</td>
+        </tr>
+        <tr>
+          <th>Open format?</th>
+          <td>Yes</td>
+        </tr>
+        
+      </table>
+          
+    </aside>
+
+    <aside id="contents-list">
+      <ol>
+        <li>History
+          <ol>
+            <li>"Thoughts on Flash"</li>
+            <li> Last call, candidacy, and recommendation stages</li>
+            <li>Timeline</li>
+            <li> W3C and WHATWG conflict</li>
+              <ol>
+                <li> Differences between the two standards</li>
+              </ol>
+          </ol>
+        </li>
+
+        <li> Features and APIs</li>
+        <li> Features
+          <ol>
+            <li>Markup</li>
+            <li>New APIs</li>
+            <li>XHTML 5 (XML-serialized HTML 5)</li>
+          </ol>
+        </li>
+      </ol>
     </aside>
 
 </body>
