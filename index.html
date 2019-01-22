@@ -21,29 +21,59 @@
         aside {
           background-color: #dee2e8;
           float: left;
-          width: 150px;
-          height: 100%;
           margin: 0px 20px 0px 0px;
           padding: 10px;
           font-size: 13px;
           line-height: 20px;
         }
 
+        #lefty, #left-bar {
+          float: left;
+          width: 150px;
+          height: 1500px; //??????
+          dddcolor: #333;
+          xxxposition: fixed;
+          xxxclear: both;
+        }
+
+        #left-bar a:link{
+          text-decoration: none;
+          color: blue;
+        }
+
+        #left-bar a:visited{
+          color: blue; /* since i have given 
+          all the links the same href! "" */
+        }
+
+        #left-bar a:hover{
+          text-decoration: underline;
+        }
+
+
+        #container {
+          float: left;
+        }
+
         header {
           height: 90px;
-          width: fillwwww;
-          margin-right: 0px;
+          width: 96%;
           xxmargin-left: calc(180px + 5%);
           float: left;
           padding: 10px 20px;
-          background-color: #e1e8f4; 
-  display: flex;
-  lllflex-wrap: nowrap;
+          background-color: #e1e8f4;
         }
      
         header navbar {
           color: #444;
           float: right;
+            zzzwidth: 100%;
+            /*
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            flex-wrap: wrap;
+            */
         }
 
         header navbar form {
@@ -58,22 +88,27 @@
           text-decoration: underline;
         }
 
-
-
         main {
             float: left;
-            width: 50%;
-        }
-
-        #right-bar {
-            float: right;
-            width: 300px;
-            xxxheight: 400px;
-            background-color: ;
+            zzzzzwidth: 50%;
         }
 
         table {
-  
+          background-color: #dae1ed;
+          border: 1px solid #ccc;
+          max-width: 280px;
+          float: right;
+          font-size: 12px;
+          margin: 10px;
+        }
+
+        table, p {
+          ssdisplay:inline-block;
+        }
+
+        table caption {
+          font-size: 16px;
+          font-weight: bold;
         }
 
         table, th, td {
@@ -81,56 +116,61 @@
           border-collapse: collapse;
         }
         th, td {
-          xxxpadding: 5px;
           text-align: left;
-          min-width: 150px;
+          max-width: 150px;
+          padding: 5px;
+          margin: 10px;
+
         }
 
         #contents-list {
-          width: 450px;
+          border: 1px solid #ccc;
         }
+
         ol { counter-reset: item }
         li{ display: block }
         li:before { content: counters(item, ".") " "; counter-increment: item }
+
 
     </style>
 </head>
 
 <body>
 
-    
+  <div id="lefty" style="float: left; margin-right: 20px">
+    <aside id="left-bar">
 
-    <aside>
-    <img src="images/logo.png" alt="wikipedia logo" height="150" width="130" />
+    <img src="images/logo.png" alt="wikipedia logo" height="150px" width="130px" />
     <a href="">Main page</a><br>
     <a href="">Contents</a><br>
-    Featured content<br>
-    Current events<br>
-    Random article<br>
-    Donate to Wikipedia<br>
-    Wikipedia store<br><br>
+    <a href="">Featured content</a><br>
+    <a href="">Current events</a><br>
+    <a href="">Random article</a><br>
+    <a href="">Donate to Wikipedia</a><br>
+    <a href="">Wikipedia store</a><br><br>
 
     Interaction
     <hr>
-    <a href="">Help</a>
-    <a href="">About Wikipedia
-    <a href="">Community portal
-    Recent changes
-    Contact page
+    <a href="">Help</a><br>
+    <a href="">About Wikipedia</a><br>
+    <a href="">Community portal</a><br>
+    <a href="">Recent changes</a><br>
+    <a href="">Contact page</a> <br><br>
 
     Tools
     <hr>
-    <a href="">What links here</a>
-    <a href="">Related changes</a>
-    <a href="">Upload file</a>
-
+    <a href="">What links here</a><br>
+    <a href="">Related changes</a><br>
+    <a href="">Upload file</a><br>
 
     </aside>
+  </div>
 
+  <div id="container" style="margin-left: 20px; float: left; min-width: 300px; max-width: 1000px;">
 
     <header>
         <navbar>
-            <img src="images/person.png" alt="person icon" height="12" width="12" />
+            <img src="images/person.png" alt="person icon" height="12px" width="12px" />
             Not logged in
             <a href="">Talk</a>
             <a href="">Contributions</a>
@@ -151,21 +191,26 @@
         </navbar>
     </header>
 
-    <main>
-    <h2>HTML5</h2>
+
+
+    <br>
+    <h2 style="margin-top: 120px">HTML5</h2>
     <hr>
-    <span class="small">From Wikipedia, the free encyclopedia</span>
+    <span class="small" style="float: left;">From Wikipedia, the free encyclopedia</span> <br>
 
-    <p>HTML 5 (formerly and commonly spelled HTML5[a]) is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.</p>
 
-    <p>HTML 5 is the fifth and current major version of the HTML standard, and subsumes XHTML. It currently exists in two standardized forms: HTML 5.2 Recommendation[4] by the World Wide Web Consortium (W3C, a broad coalition of organizations), intended primarily for Web content developers; and HTML Living Standard[5] by WHATWG (a small consortium of four browser vendors), intended primarily for browser developers, though it also exists in an abridged Web developer version.[6] There are minor conflicts between the two groups' specifications. </p>
-    </main>
 
-    <aside id="right-bar">
-
-      <table style="width:100%" >
+      <table>
         <caption>HTML 5 <br>
       (HyperText Markup Language)</caption>
+
+        <tr>
+          <td colspan="2">
+            <img src="images/html5-logo.png" style="margin: 0% 25% " 
+            alt="html5 logo" height="120px" width="120px" />
+          </td>
+        </tr>
+
         <tr>
           <th>Filename extension</th>
           <td>.html, .htm</td>
@@ -204,7 +249,57 @@
         
       </table>
           
-    </aside>
+
+
+      <table>
+        <caption>HTML 5 <br>
+        (XHTML Syntax of HTML 5)</caption>
+
+        <tr>
+          <th>Filename extension</th>
+          <td>.xhtml, .html, .htm</td>
+        </tr>
+        <tr>
+          <th>Internet media type</th>
+          <td>application/xml, application/xhtml+xml</td>
+        </tr>
+        
+        <tr>
+          <th>Developed by</th>
+          <td>  World Wide Web Consortium and WHATWG</td>
+        </tr>
+
+        <tr>
+          <th>Type of format</th>
+          <td>Markup language</td>
+        </tr>
+        <tr>
+          <th>Extended from</th>
+          <td>XML, HTML 5</td>
+        </tr>
+        
+        <tr>
+          <th>Standard</th>
+          <td>HTML 5.2 Recommendation: "The XHTML Syntax"</td>
+        </tr>
+        <tr>
+          <th>Open format?</th>
+          <td>Yes</td>
+        </tr>
+        
+      </table>
+
+
+    <main>
+
+    <p style="display:inline-block;">HTML 5 (formerly and commonly spelled HTML5[a]) is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.</p>
+
+    <p>HTML 5 is the fifth and current major version of the HTML standard, and subsumes XHTML. It currently exists in two standardized forms: HTML 5.2 Recommendation[4] by the World Wide Web Consortium (W3C, a broad coalition of organizations), intended primarily for Web content developers; and HTML Living Standard[5] by WHATWG (a small consortium of four browser vendors), intended primarily for browser developers, though it also exists in an abridged Web developer version.[6] There are minor conflicts between the two groups' specifications. </p>
+
+    <p>HTML 5 was first released in public-facing form on 22 January 2008,[7] with a major update and "W3C Recommendation" status in October 2014.[2][8] Its goals are to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as Web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML 5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML;[9] the HTML 4 and XHTML specs were announced as superseded by HTML 5.2 on 27 March 2018.[10]</p>
+
+    <p>HTML 5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications.[11] For the same reasons, HTML 5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind. </p>
+    </main>
 
     <aside id="contents-list">
       <ol>
@@ -230,6 +325,20 @@
         </li>
       </ol>
     </aside>
+
+    <article style="clear: both;">
+      <h3>History</h3>
+      <hr>
+
+      <p>The Web Hypertext Application Technology Working Group (WHATWG) began work on the new standard in 2004. At that time, HTML 4.01 had not been updated since 2000,[13] and the World Wide Web Consortium (W3C) was focusing future developments on XHTML 2.0. In 2009, the W3C allowed the XHTML 2.0 Working Group's charter to expire and decided not to renew it.[14]</p>
+
+      <p>The Mozilla Foundation and Opera Software presented a position paper at a World Wide Web Consortium (W3C) workshop in June 2004,[15] focusing on developing technologies that are backward-compatible with existing browsers,[16] including an initial draft specification of Web Forms 2.0. The workshop concluded with a vote—8 for, 14 against—for continuing work on HTML.[17] Immediately after the workshop, WHATWG was formed to start work based upon that position paper, and a second draft, Web Applications 1.0, was also announced.[18] The two specifications were later merged to form HTML 5.[19] The HTML 5 specification was adopted as the starting point of the work of the new HTML working group of the W3C in 2007.</p>
+
+      <p>WHATWG's Ian Hickson (Google) and David Hyatt (Apple) produced W3C's first public working draft of the specification on 22 January 2008.[7] </p>
+
+    </article>
+
+  </div>
 
 </body>
 </html>
