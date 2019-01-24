@@ -21,7 +21,7 @@
         aside {
           background-color: #dee2e8;
           float: left;
-          margin: 0px 20px 0px 0px;
+          margin: 0px 10px 0px 0px;
           padding: 10px;
           font-size: 13px;
           line-height: 20px;
@@ -30,10 +30,8 @@
         #lefty, #left-bar {
           float: left;
           width: 150px;
-          height: 1500px; //??????
-          dddcolor: #333;
-          xxxposition: fixed;
-          xxxclear: both;
+          /*height: 1500px; //???*/
+          margin-right: 10px;
         }
 
         #left-bar a:link{
@@ -58,7 +56,6 @@
         header {
           height: 90px;
           width: 96%;
-          xxmargin-left: calc(180px + 5%);
           float: left;
           padding: 10px 20px;
           background-color: #e1e8f4;
@@ -77,7 +74,7 @@
         }
 
         header navbar form {
-            float: right;
+          float: inherit;
         }
 
         header navbar a {
@@ -89,8 +86,10 @@
         }
 
         main {
-            float: left;
-            zzzzzwidth: 50%;
+        }
+
+        #main-article {
+          /*width: 600px;*/
         }
 
         table {
@@ -100,10 +99,11 @@
           float: right;
           font-size: 12px;
           margin: 10px;
+          clear: right;
         }
 
         table, p {
-          ssdisplay:inline-block;
+          /*ssdisplay:inline-block;*/
         }
 
         table caption {
@@ -127,9 +127,18 @@
           border: 1px solid #ccc;
         }
 
-        ol { counter-reset: item }
-        li{ display: block }
-        li:before { content: counters(item, ".") " "; counter-increment: item }
+        ol {
+          counter-reset: item;
+        }
+        
+        li {
+          display: block;
+        }
+
+        li:before {
+          content: counters(item, ".") " ";
+          counter-increment: item;
+        }
 
 
     </style>
@@ -137,36 +146,34 @@
 
 <body>
 
-  <div id="lefty" style="float: left; margin-right: 20px">
-    <aside id="left-bar">
+  <aside id="left-bar">
 
-    <img src="images/logo.png" alt="wikipedia logo" height="150px" width="130px" />
-    <a href="">Main page</a><br>
-    <a href="">Contents</a><br>
-    <a href="">Featured content</a><br>
-    <a href="">Current events</a><br>
-    <a href="">Random article</a><br>
-    <a href="">Donate to Wikipedia</a><br>
-    <a href="">Wikipedia store</a><br><br>
+  <img src="images/logo.png" alt="wikipedia logo" height="150px" width="130px" />
+  <a href="">Main page</a><br>
+  <a href="">Contents</a><br>
+  <a href="">Featured content</a><br>
+  <a href="">Current events</a><br>
+  <a href="">Random article</a><br>
+  <a href="">Donate to Wikipedia</a><br>
+  <a href="">Wikipedia store</a><br><br>
 
-    Interaction
-    <hr>
-    <a href="">Help</a><br>
-    <a href="">About Wikipedia</a><br>
-    <a href="">Community portal</a><br>
-    <a href="">Recent changes</a><br>
-    <a href="">Contact page</a> <br><br>
+  Interaction
+  <hr>
+  <a href="">Help</a><br>
+  <a href="">About Wikipedia</a><br>
+  <a href="">Community portal</a><br>
+  <a href="">Recent changes</a><br>
+  <a href="">Contact page</a> <br><br>
 
-    Tools
-    <hr>
-    <a href="">What links here</a><br>
-    <a href="">Related changes</a><br>
-    <a href="">Upload file</a><br>
+  Tools
+  <hr>
+  <a href="">What links here</a><br>
+  <a href="">Related changes</a><br>
+  <a href="">Upload file</a><br>
 
-    </aside>
-  </div>
+  </aside>
 
-  <div id="container" style="margin-left: 20px; float: left; min-width: 300px; max-width: 1000px;">
+  <div id="container" style="margin-left: 10px; float: left; min-width: 300px; max-width: 1000px;">
 
     <header>
         <navbar>
@@ -291,14 +298,15 @@
 
 
     <main>
+      <article id="main-article">
+      <p>HTML 5 (formerly and commonly spelled HTML5[a]) is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.</p>
 
-    <p style="display:inline-block;">HTML 5 (formerly and commonly spelled HTML5[a]) is a software solution stack that defines the properties and behaviors of web page content by implementing a markup based pattern to it.</p>
+      <p>HTML 5 is the fifth and current major version of the HTML standard, and subsumes XHTML. It currently exists in two standardized forms: HTML 5.2 Recommendation[4] by the World Wide Web Consortium (W3C, a broad coalition of organizations), intended primarily for Web content developers; and HTML Living Standard[5] by WHATWG (a small consortium of four browser vendors), intended primarily for browser developers, though it also exists in an abridged Web developer version.[6] There are minor conflicts between the two groups' specifications. </p>
 
-    <p>HTML 5 is the fifth and current major version of the HTML standard, and subsumes XHTML. It currently exists in two standardized forms: HTML 5.2 Recommendation[4] by the World Wide Web Consortium (W3C, a broad coalition of organizations), intended primarily for Web content developers; and HTML Living Standard[5] by WHATWG (a small consortium of four browser vendors), intended primarily for browser developers, though it also exists in an abridged Web developer version.[6] There are minor conflicts between the two groups' specifications. </p>
+      <p>HTML 5 was first released in public-facing form on 22 January 2008,[7] with a major update and "W3C Recommendation" status in October 2014.[2][8] Its goals are to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as Web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML 5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML;[9] the HTML 4 and XHTML specs were announced as superseded by HTML 5.2 on 27 March 2018.[10]</p>
 
-    <p>HTML 5 was first released in public-facing form on 22 January 2008,[7] with a major update and "W3C Recommendation" status in October 2014.[2][8] Its goals are to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as Web browsers, parsers, etc., without XHTML's rigidity; and to remain backward-compatible with older software. HTML 5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2 HTML;[9] the HTML 4 and XHTML specs were announced as superseded by HTML 5.2 on 27 March 2018.[10]</p>
-
-    <p>HTML 5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications.[11] For the same reasons, HTML 5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind. </p>
+      <p>HTML 5 includes detailed processing models to encourage more interoperable implementations; it extends, improves and rationalizes the markup available for documents, and introduces markup and application programming interfaces (APIs) for complex web applications.[11] For the same reasons, HTML 5 is also a candidate for cross-platform mobile applications, because it includes features designed with low-powered devices in mind. </p>
+      </article>
     </main>
 
     <aside id="contents-list">
@@ -362,6 +370,18 @@
       <p>The HTML 5 syntax is no longer based on SGML[86][87] despite the similarity of its markup. It has, however, been designed to be backward-compatible with common parsing of older versions of HTML. It comes with a new introductory line that looks like an SGML document type declaration, DOCTYPE html, which triggers the standards-compliant rendering mode.[88] Since 5 January 2009, HTML 5 also includes Web Forms 2.0, a previously separate WHATWG specification.[89][90] </p>
 
     </article>
+
+    <iframe src="https://developer.mozilla.org/en-US/docs/Glossary"
+        width="50%" height="500px" frameborder="0"
+        allowfullscreen sandbox>
+      <p> <a href="https://developer.mozilla.org/en-US/docs/Glossary">
+        Fallback link for browsers that don't support iframes
+      </a> </p>
+  </iframe>
+
+<iframe src="https://www.w3schools.com">
+  <p>Your browser does not support iframes.</p>
+</iframe>
 
   </div>
 

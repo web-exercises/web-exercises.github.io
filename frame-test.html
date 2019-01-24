@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>HTML5 - WikiSample</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+
+<button href="" value="ohio" onclick="searchBing(this.value)">Ohio</button> <br>
+
+<button href="" value="venice" onclick="searchBing(this.value)">Venice</button> <br>
+
+<button value="london" onclick="searchBing(this.value)">Lonon</button> <br>
+
+<br><br>
+
+<script type="text/javascript">
+  function searchBing(value){
+    search = "https://www.bing.com/search?q=" +value;
+    document.getElementById("bing").src = search;
+  }
+</script>
+
+
+
+<iframe id="bing" src=x width="50%" height="300px" sandbox>
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+<!--   <iframe src="https://developer.mozilla.org/en-US/docs/Glossary"
+      width="50%" height="500px" frameborder="0"
+      allowfullscreen sandbox>
+    <p>
+      <a href="https://developer.mozilla.org/en-US/docs/Glossary">
+      Fallback link for browsers that don't support iframes
+      </a> 
+    </p>
+  </iframe>
+
+ --> 
+</body>
+</html>
