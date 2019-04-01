@@ -1,225 +1,76 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
-    <title>Milad Khaari</title>
-    <meta charset="UTF-8">
-  	<meta name="viewport" content=
-      "width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="description" content="My public website!">
-    <meta name="keywords" content="website, front-end">
-    <meta name="author" content="Milad Khaari">
-    <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="css/general.css" type="text/css">
-    <link rel="stylesheet" href="css/progressbar.css">
-    <link rel="stylesheet" href="css/scrollTop.css">
-	  <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="utf-8">
+    <title>User Management</title>
+    <link rel="stylesheet" href="user.css"/>
 </head>
 
-<body id="body">
+<body>
 
-    <div id="scroll" style="display: none;">
-      <span></span>
+<h3>Hello</h3>
+<div class="content">
+
+    <table id="user-list">
+        <caption>user list</caption>
+        <thead>
+            <th>id</th><th>first name</th><th>last name</th><th>avatar</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="loading" class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
     </div>
 
-    <div class="container">
-
-      <div class="nav-scroller py-1 mb-2">
-  
-        <nav class="nav d-flex justify-content-between">
-
-		      <img src="images/logo.png" id="logo" alt="logo" />
-
-		      <div id="drop" class="dropdown">
-              <button id="dropbutton" class="dropbtn btn btn-sm btn-outline-primary">More</button>
-              <div class="dropdown-content">
-                  <a class="p-2 text-muted topnav" href="#Resume">Resume</a>         
-                  <a class="p-2 text-muted topnav" href="#Education">Education</a>
-                  <a class="p-2 text-muted topnav" href="#Skills">Skills</a>
-                  <a class="p-2 text-muted topnav" href="#Programming">Programming languages</a>
-                  <a class="p-2 text-muted topnav" href="#Projects">Projects</a>
-                  <a class="p-2 text-muted topnav" href="#game">Game</a>
-                  <a class="p-2 text-muted topnav" href="#Contact">Contact</a>
-              </div>
-          </div>
-
-          <a class="p-2 text-muted topnav" href="#Resume">Resume</a>         
-          <a class="p-2 text-muted topnav" href="#Education">Education</a>
-          <a class="p-2 text-muted topnav" href="#Skills">Skills</a>
-          <a class="p-2 text-muted topnav" href="#Programming">Programming languages</a>
-          <a class="p-2 text-muted topnav" href="#Projects">Projects</a>
-          <a class="p-2 text-muted topnav" href="#game">Game</a>
-          <a class="p-2 text-muted topnav" href="#Contact">Contact</a>
-          
-		      <div class="col-4 d-flex justify-content-end align-items-center">
-            <a id="download-cv" class="btn btn-sm btn-outline-secondary" href="https://github.com/miladkhaari/miladkhaari.github.io/raw/master/CV.pdf">Download the full CV.pdf</a>
-          </div>
-
-        </nav>
-      </div>
+<hr/>
+     <button class="select" type="button">Add</button>
+     <button class="select" type="button">Edit</button>
+     <button class="select" type="button">Remove</button>
+<hr/>
 
 
-      <h1 id="milad-header" class="display-4">Milad Khaari</h1>
-      <p style="margin: 1px 20px; font-size: 1.25rem;
-font-weight: 300;"> Hi, I'm a fresh programmer with both front-end and back-end skills. This is my blog to introduce myself and repressent my <i>Curriculum vitae</i> and recent projects. I dont have the exprience to work in a company yet, but have self-studied and experienced building up websites and learned how to handel new problems along the road. If there's a chance for cooperation, I'd be glad to get in touch and apply for the job. You can <a href="tel:09365834083">call</a> me or contact me via <a href="mailto:milad.khaari@gmail.com?Subject=Job%20Apply" target="_blank"> email</a>.<br>
-      <span class style="color: #777" ="blog-post-meta"> March 2, 2019 
-      </span> </p>
-      <hr>
-      
-    </div>
-
-
-   
-    <main class="container">
-      <div class="row">
-        <div class="col-md-8 blog-main">
-
-          <div class="blog-post">
-
-            <h2 id="Education">Education </h2>
-            <h4>Bachelor of Computer Science </h4>
-            in <strong>University of Mazandaran</strong> 1390-1394 <br>
-            researched on cross-platform development...
-            <hr>
-
-            <h2 id="Skills">Skills </h2> <br>
-            Familiar with <strong>Responsive Web Design</strong> <br>
-            Familiar with <strong>Linux</strong> and <strong>Bash</strong> <br>
-            Familiar with <strong>Git</strong> version control <br>
-            Know about <strong>Agile</strong> and <strong>Scrum</strong> methods <br>
-            Fully understanding of <strong>English</strong> <br>
-            <hr>
-
-            <h2 id="Programming">Programming </h2> <br>
-
-            Front-End: <br>
-            <ul>
-                <li> <strong>HTML</strong>5, </li>
-                <li> <strong>CSS</strong>3, <strong>SASS</strong>, <strong>Bootstrap</strong> </li>
-                <li> <strong>JavaScript</strong> (ES6), <strong>jQuery</strong> </li>
-            </ul>
-            
-            Back-End: <br>
-            <ul>
-                <li> <strong>Python</strong>, <strong>Django</strong> , django-REST-framework </li> 
-                <li>Familiar with: <strong>C</strong>, <strong>C++</strong></li>
-            </ul>
-
-            Also:
-            <ul>
-                <li>Good understanding of <strong>HTTP</strong> protocol</li>
-            </ul>
-            <hr>
-
-            <h2 id="Projects">Projects </h2>
-
+    <form action="">
+        <fieldset>
+            <legend>Add Member</legend>
+            Name:
+            <input type="text" name="name" value="">
+            <br>
+            Job:
+            <input type="text" name="job" value="">
             <br><br>
-            <h4>Divar Sample</h4>
-            <p>Here is my simulated sample of <STRONG>Divar</STRONG> website design. All of the parts are <strong>visually simulated</strong>, but none is copied. It interact too! (<em>it's written in pure html, css, and javascript with some jquery code added later.</em>) It's also a <strong>responsive</strong> website, due to using <mark>Bootstrap</mark>, and <mark>Media Queries</mark>. I defined a class named <em>Device</em> and for each device object I've set different attributes. So that it'll be easy to filter the objects just by setting the desirable values and clicking the search button. </p> 
+            <input type="submit" class="btn submit" value="Submit" onclick="submit()">
+        </fieldset>
+    </form> 
 
-            <p> you can visit my sample website <a href="http://divarsample.github.io/" target="_blank"><em>here</em></a>. As I said above it's just a simulation of the <a href="https://divar.ir/tehran/%D8%AA%D9%87%D8%B1%D8%A7%D9%86/browse/%D9%84%D9%88%D8%A7%D8%B2%D9%85-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9%DB%8C/" target="_blank">original divar website</a> and not a productive site, therefore instead of spending much time on making a non profitable fake site, I focused on studying the basic structure and mechanism of the website and skipped the unimportant details. So this one's only small section of that site that has been sampled.
-            </p>
+    <form action="">
+        <fieldset>
+            <legend>Edit Member</legend>
+            Name:
+            <input type="text" name="name" value="">
             <br>
+            XXX:
+            <input type="text" name="job" value="">
+            <br><br>
+            <button class="btn submit" onclick="edit()">Edit</button>
+        </fieldset>
+    </form>
 
-            <h4 id="game">Sniper Game</h4>
-            <p>This is an other project that I'm working on currently. it uses <strong>canvas</strong> to implement a game and has multiple interesting options! Right now it's under construction. but you can reach it <a href="http://sniper13.github.io/" target="_blank"><em>here</em></a>.</p>
-            <hr>
+    <form action="">
+        <fieldset>
+            <legend>Remove Member</legend>
+            Are you sure you want to delete "<span id="">mr Crowly</span>" ?
+            <br><br>
+            <button class="btn danger" onclick="remove()">Remove</button>
+        </fieldset>
+    </form> 
 
+</div>
 
+<script src="jquery.min.js"></script>
+<script src="user.js"></script>
 
-            <h2 id="Resume">Resume </h2> <br>
-            <p>You can download the full <strong>Curriculum vitae</strong> (my resume) as a pdf file
-            <a href="https://github.com/miladkhaari/miladkhaari.github.io/raw/master/CV.pdf">here</a>. <br>
-            Thank you for taking the time.
-            </p>
-            <hr>
-
-            <h2 id="Contact">Contact Me </h2> <br>
-            <p>You can contact me either by calling me:
-              <ul>
-                <li><a href="tel:09365834083">0936 583 4083</a></li>
-                <li><a href="tel:09029272572">0902 9272 572</a></li>
-              </ul>
-
-            or sending me an <a href="mailto:milad.khaari@gmail.com?Subject=Job%20Apply" target="_blank"> email</a>.<br>
-          
-            <br>
-          </div><!-- /.blog-post -->
-
-        </div><!-- /.blog-main -->
-
-        <aside class="col-md-4 blog-sidebar">
-          <div class="p-3 mb-3 bg-light rounded">
-            <h4 class="font-italic">Quote of the Day</h4>
-              
-            <p class="mb-0"> <em>"Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch."</em> <br> _Tim Berners-Lee</p>
-          </div>
-
-          <div class="p-3">
-            <h4 class="font-italic">Contact</h4>
-            <ol class="list-unstyled">
-              <li><img src="images/gmail.png" alt="gmail icon" style="width:20px;"> milad.khaari@gmail.com</li>
-              <li><img src="images/phone.png" alt="phone icon" style="width:20px;"> 0936 583 4083</li>
-              <li><img src="images/phone.png" alt="phone icon" style="width:20px;"> 0902 9272 572</li>
-              <li><img src="images/linkedin.png" alt="linkedin icon" style="width:20px;"> amoo-milad</li>
-            </ol>
-          </div>
-
-          <div class="p-3">
-            <h4 class="font-italic">Competencies</h4>
-
-            <ol class="list-unstyled">
-              <li><img src="images/front.png" alt="front-end icon" style="width:24px;"> front-end design</li>
-              <li><img src="images/back.png" alt="back-end icon" style="width:24px;"> back-end development</li>
-
-              <li><img src="images/collaboration.png" alt="collaboration icon" style="width:24px;"> communication, and
-               <br>&nbsp; &nbsp; &nbsp; &nbsp;collaboration skills</li>
-              <li><img src="images/english.png" alt="english icon" style="width:20px;"> skilled in English</li>
-            </ol>
-          </div>
-
-        </aside><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-    </main><!-- /.container -->
-
-
-    <footer class="footer">
-
-        <img src="images/logo.png" id="footerlogo" alt="logo">
-
-        <nav class="blog-pagination" style="float:right">
-            <a id="back-to-top" class="btn btn-outline-primary" href="#">Back to the Top!</a>
-        </nav>
-
-        <div style="clear:both">
-            <p>
-            Email: <a href="mailto:milad.khaari@gmail.com">milad.khaari@gmail.com</a> <br>
-            Tel: &nbsp;09365834083, 09029272572 <br>
-            To download the full cv.pdf click <a href="https://github.com/miladkhaari/miladkhaari.github.io/raw/master/CV.pdf">here</a>. <br>
-            </p>
-        </div>
-
-        <h6>Last update: March 2, 2019</h6>
-        <h6>Copyright © 2019 <a href="http://miladkhaari.github.io/">Milad Khaari</a>. All rights reserved.</h6>
-
-    </footer>
-
-    <!-- ===================== Scripts ====================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript">
-      window.addEventListener("hashchange", function () {
-        window.scrollTo(window.scrollX, window.scrollY - 140);
-      });
-    </script>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/progressbar.js"></script>
-    <script src="js/scrollTop.js"></script>
-
-  </body>
+</body>
 </html>
