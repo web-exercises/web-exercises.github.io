@@ -42,6 +42,8 @@ $(document).ready(function() {
 
 
 
+
+
     function submit(){
 
       fetch('https://www.reqres.in/api/users')
@@ -59,3 +61,10 @@ $(document).ready(function() {
           });
     }    
 });
+
+  function selectBtn(task){
+    $('.hidden').hide();
+    
+    task = '#'+task;
+    $(task).show();
+  }

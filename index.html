@@ -8,7 +8,6 @@
 
 <body>
 
-<h3>Hello</h3>
 <div class="content">
 
     <table id="user-list">
@@ -26,13 +25,13 @@
     </div>
 
 <hr/>
-     <button class="select" type="button">Add</button>
-     <button class="select" type="button">Edit</button>
-     <button class="select" type="button">Remove</button>
+     <button onclick="selectBtn('add')" class="select" type="button">Add</button>
+     <button onclick="selectBtn('edit')" class="select" type="button">Edit</button>
+     <button onclick="selectBtn('remove')" class="select" type="button">Remove</button>
 <hr/>
 
 
-    <form action="">
+    <form class="hidden" id="add" action="">
         <fieldset>
             <legend>Add Member</legend>
             Name:
@@ -45,7 +44,7 @@
         </fieldset>
     </form> 
 
-    <form action="">
+    <form class="hidden" id="edit" action="">
         <fieldset>
             <legend>Edit Member</legend>
             Name:
@@ -58,7 +57,7 @@
         </fieldset>
     </form>
 
-    <form action="">
+    <form class="hidden" id="remove" action="">
         <fieldset>
             <legend>Remove Member</legend>
             Are you sure you want to delete "<span id="">mr Crowly</span>" ?

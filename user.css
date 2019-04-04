@@ -3,10 +3,16 @@
   border-radius: 5px;
   height: 500px;
   width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .error {
   color: red;
+}
+
+.hidden {
+  display: none;
 }
 
 /************* loading spinner ************/
