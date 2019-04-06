@@ -25,24 +25,24 @@ th, td {
   text-align: left;
 }
 
-td {
-  padding: 2px 15px;
-  text-align: left;
-  border-top: 1px solid #a9a9a9;
-  /*border-top: 1px solid red;*/
+th {
+  background-color: #215e30;
+  color: white;
+}
 
+td {
+  border-top: 1px solid #a9a9a9;
+}
+
+#user-list {
+  border-collapse: collapse;
 }
 
 #user-list th:first-child, td:first-child {
   padding: 1px;
-  /*background-color: green;*/
   visibility: hidden;
   border: none;
 }
-
-#user-list tbody tr:last-child {
-}
-
 
 #user-list img {
   width: 42px;
@@ -104,14 +104,14 @@ td {
 
 .select {
   border: none;
-  background-color: green;
+  background-color: #215e30;
   color: white; /* Add a text color */
   padding: 10px 20px; /* Add some padding */
   margin: 5px;
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
 .select:hover {
-  background-color: darkgreen;
+  background-color: #3eb25b;
 }
 
 .submit {background-color: #2196F3;} /* Blue */
@@ -122,3 +122,4 @@ td {
 
 .danger {background-color: #f44336;} /* Red */
 .danger:hover {background: #da190b;}
+
