@@ -1,18 +1,52 @@
 .content {
   background-color: lightblue;
   border-radius: 5px;
-  height: 500px;
-  width: 300px;
+  height: 520px;
+  width: 360px;
+  padding: 10px;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.content table {
+  margin: 0 auto;
 }
 
 .error {
   color: red;
 }
 
-.hidden {
+.hiddenForms {
   display: none;
+}
+
+th, td {
+  padding: 2px 15px;
+  text-align: left;
+}
+
+td {
+  padding: 2px 15px;
+  text-align: left;
+  border-top: 1px solid #a9a9a9;
+  /*border-top: 1px solid red;*/
+
+}
+
+#user-list th:first-child, td:first-child {
+  padding: 1px;
+  /*background-color: green;*/
+  visibility: hidden;
+  border: none;
+}
+
+#user-list tbody tr:last-child {
+}
+
+
+#user-list img {
+  width: 42px;
+  height: 42px;
 }
 
 /************* loading spinner ************/
@@ -82,6 +116,9 @@
 
 .submit {background-color: #2196F3;} /* Blue */
 .submit:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
 
 .danger {background-color: #f44336;} /* Red */
 .danger:hover {background: #da190b;}

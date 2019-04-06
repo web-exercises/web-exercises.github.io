@@ -11,9 +11,9 @@
 <div class="content">
 
     <table id="user-list">
-        <caption>user list</caption>
+        <caption>User List</caption>
         <thead>
-            <th>id</th><th>first name</th><th>last name</th><th>avatar</th>
+            <th></th> <th>id</th> <th>name</th> <th>avatar</th>
         </thead>
         <tbody></tbody>
     </table>
@@ -24,45 +24,57 @@
         <div class="bounce3"></div>
     </div>
 
-<hr/>
-     <button onclick="selectBtn('add')" class="select" type="button">Add</button>
-     <button onclick="selectBtn('edit')" class="select" type="button">Edit</button>
-     <button onclick="selectBtn('remove')" class="select" type="button">Remove</button>
-<hr/>
+    <hr/>
+    <div class="center" style="text-align: center">
+      <button onclick="selectBtn('add')" class="select" type="button">Add</button>
+      <button onclick="selectBtn('edit')" class="select" type="button">Edit</button>
+      <button onclick="selectBtn('remove')" class="select" type="button">Remove</button>
+    </div>
+    <hr/>
 
 
-    <form class="hidden" id="add" action="">
+    <form class="hiddenForms" id="add" action="">
         <fieldset>
             <legend>Add Member</legend>
-            Name:
+            Name:<br>
             <input type="text" name="name" value="">
             <br>
-            Job:
+            Job:<br>
             <input type="text" name="job" value="">
             <br><br>
             <input type="submit" class="btn submit" value="Submit" onclick="submit()">
         </fieldset>
     </form> 
 
-    <form class="hidden" id="edit" action="">
+    <form class="hiddenForms" id="edit" action="">
         <fieldset>
             <legend>Edit Member</legend>
-            Name:
-            <input type="text" name="name" value="">
-            <br>
-            XXX:
-            <input type="text" name="job" value="">
-            <br><br>
-            <button class="btn submit" onclick="edit()">Edit</button>
+
+            <p class="beforeHint">Please select a user to edit.</p>
+            <p class="afterHint">
+                The user info will be changed to: <br>
+
+                Name:<br>
+                <input type="text" name="name" value="">
+                <br>
+                Job:<br>
+                <input type="text" name="job" value="">
+                <br><br>
+                <button class="btn warning" onclick="edit()">Change!</button>
+            </p>
         </fieldset>
     </form>
 
-    <form class="hidden" id="remove" action="">
+    <form class="hiddenForms" id="remove" action="">
         <fieldset>
             <legend>Remove Member</legend>
-            Are you sure you want to delete "<span id="">mr Crowly</span>" ?
-            <br><br>
-            <button class="btn danger" onclick="remove()">Remove</button>
+
+            <p class="beforeHint">Please select the user you want to remove.</p>
+            <p class="afterHint">
+                Are you sure you want to delete "<span id="">mr Felani</span>" ?
+                <br><br>
+                <button class="btn danger" onclick="remove()">Remove!</button>
+            </p>
         </fieldset>
     </form> 
 
