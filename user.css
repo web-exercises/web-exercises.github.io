@@ -1,11 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
 .content {
   background-color: lightblue;
   border-radius: 5px;
-  height: 520px;
+  /*height: 520px;*/
   width: 360px;
   padding: 10px;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content table {
@@ -14,6 +19,10 @@
 
 .error {
   color: red;
+}
+
+.content div {
+  text-align: center;
 }
 
 .hiddenForms {
@@ -25,11 +34,6 @@ th, td {
   text-align: left;
 }
 
-th {
-  background-color: #215e30;
-  color: white;
-}
-
 td {
   border-top: 1px solid #a9a9a9;
 }
@@ -38,10 +42,16 @@ td {
   border-collapse: collapse;
 }
 
-#user-list th:first-child, td:first-child {
+#user-list td:first-child {
   padding: 1px;
   visibility: hidden;
   border: none;
+}
+
+th {
+  background-color: #215e30;
+  border-bottom: 1px solid #fff;
+  color: white;
 }
 
 #user-list img {
@@ -105,11 +115,13 @@ td {
 .select {
   border: none;
   background-color: #215e30;
-  color: white; /* Add a text color */
-  padding: 10px 20px; /* Add some padding */
-  margin: 5px;
-  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  color: white;
+  cursor: pointer;
+  width: 80px;
+  margin: 0 auto;
+  padding: 10px;
 }
+
 .select:hover {
   background-color: #3eb25b;
 }

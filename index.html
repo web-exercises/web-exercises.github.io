@@ -25,7 +25,7 @@
     </div>
 
     <hr/>
-    <div class="center" style="text-align: center">
+    <div>
       <button onclick="selectBtn('add')" class="select" type="button">Add</button>
       <button onclick="selectBtn('edit')" class="select" type="button">Edit</button>
       <button onclick="selectBtn('remove')" class="select" type="button">Remove</button>
@@ -33,18 +33,21 @@
     <hr/>
 
 
-    <form class="hiddenForms" id="add" action="">
+    <!-- <form class="hiddenForms" id="add" action="https://www.reqres.in/api/users"> -->
+    <form class="hiddenForms" id="add">
         <fieldset>
             <legend>Add Member</legend>
             Name:<br>
-            <input type="text" name="name" value="">
+            <input id="memberName" type="text" name="name">
             <br>
             Job:<br>
-            <input type="text" name="job" value="">
+            <input id="memberJob" type="text" name="job">
             <br><br>
-            <input type="submit" class="btn submit" value="Submit" onclick="submit()">
+            <!-- <input type="submit" class="btn submit" value="Submit" onclick="submit()"> -->
+            <button type="button" class="btn submit"
+             onclick="submitMember(); return false;">Submit</button>
         </fieldset>
-    </form> 
+    </form>
 
     <form class="hiddenForms" id="edit" action="">
         <fieldset>
@@ -60,7 +63,8 @@
                 Job:<br>
                 <input type="text" name="job" value="">
                 <br><br>
-                <button class="btn warning" onclick="edit()">Change!</button>
+                <button type="button" class="btn warning"
+                 onclick="editMember(); return false;">Change!</button>
             </p>
         </fieldset>
     </form>
@@ -73,7 +77,8 @@
             <p class="afterHint">
                 Are you sure you want to delete "<span id="">mr Felani</span>" ?
                 <br><br>
-                <button class="btn danger" onclick="remove()">Remove!</button>
+                <button type="button" class="btn danger"
+                 onclick="removeMember(); return false;">Remove!</button>
             </p>
         </fieldset>
     </form> 
