@@ -150,31 +150,18 @@ $(document).ready(function() {
       return obj.id == selectedId
     })
 
-    // actually dellete it! from "DOM"
-///    $('#some_element').remove();
+    // dellete it from "local Storage"
+    const newItems = $.grep(oldItems, function(e){ 
+      return e.id != selectedId; 
+    });
+    localStorage.setItem('user-list', JSON.stringify(newItems));
+
+
+    // dellete it from "DOM"
     $(selectedUser).parent().parent().remove();
-
-    console.log(removed.id);
-    console.log(removed);
-
-    // actually dellete it! from "local Storage"
-    // $('#some_element').remove();
-
 
     $('.afterHint').hide();
     $('#remove .messages').show();
-
-
-
-
-   // localStorage.setItem('user-list', JSON.stringify(oldItems));
-
-    /*
-          $("#user-list > tbody").html("");
-          fillUsers(oldItems);
-    */
-
-     // attachUser(newMember)
   }
 
 
