@@ -53,7 +53,6 @@ $(document).ready(function() {
 }
 
 
-
 // under construction: 
     function submitMember(){
 
@@ -135,6 +134,49 @@ $(document).ready(function() {
 
 
 
+  function editMember() {
+    aaaa
+  }
+
+
+  function removeMember() {
+    
+    let oldItems = JSON.parse(localStorage.getItem('user-list')) || [];
+
+    const selectedUser = document.querySelector('input[name="choose"]:checked');
+    const selectedId = selectedUser.value;
+
+    const removed = oldItems.find(obj => {
+      return obj.id == selectedId
+    })
+
+    // actually dellete it! from "DOM"
+///    $('#some_element').remove();
+    $(selectedUser).parent().parent().remove();
+
+    console.log(removed.id);
+    console.log(removed);
+
+    // actually dellete it! from "local Storage"
+    // $('#some_element').remove();
+
+
+    $('.afterHint').hide();
+    $('#remove .messages').show();
+
+
+
+
+   // localStorage.setItem('user-list', JSON.stringify(oldItems));
+
+    /*
+          $("#user-list > tbody").html("");
+          fillUsers(oldItems);
+    */
+
+     // attachUser(newMember)
+  }
+
 
 
 
@@ -176,12 +218,15 @@ $(document).ready(function() {
 
       $('.radioButtons').click(function() {
         $('.beforeHint').hide();
+        const selectedId = document.querySelector('input[name="choose"]:checked').value;  //redundancy
+        $('.afterHint span').html(selectedId);
         $('.afterHint').show();
       }); 
     } 
 
     function showTheRightForm(task){
       $('.hiddenForms').hide();
+      $('.messages').hide();
       $('#'+task).show();
     }
 
