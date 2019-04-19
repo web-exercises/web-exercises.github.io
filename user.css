@@ -2,8 +2,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #519fa5;
+
+}
+
+hr {
+  color: #0f4957;
+}
+
 .content {
-  background-color: lightblue;
+  background-color: #17191b;
+  color: white;
   border-radius: 5px;
   /*height: 520px;*/
   width: 360px;
@@ -27,6 +37,16 @@
 
 .hiddenForms {
   display: none;
+  margin: 10px;
+}
+
+.hiddenForms fieldset {
+  padding-left: 20px;
+  border-color: #1b5050;
+}
+
+.hiddenForms fieldset legend{
+  color: #7e9ba2;
 }
 
 th, td {
@@ -35,8 +55,9 @@ th, td {
 }
 
 td {
-  border-top: 1px solid #a9a9a9;
+  border-top: 1px dashed #742d2d;
 }
+
 
 #user-list {
   border-collapse: collapse;
@@ -45,13 +66,17 @@ td {
 #user-list td:first-child {
   padding: 1px;
   visibility: hidden;
-  border: none;
+  /*border: none;*/
 }
 
 th {
-  background-color: #215e30;
-  border-bottom: 1px solid #fff;
+  background-color: #b22222;
+  background-color: #003d51;
+  border-bottom: 1px solid #de4306;
   color: white;
+  /*background-color: #371608;*/
+  /*background-color: #17191b;*/
+
 }
 
 #user-list img {
@@ -114,7 +139,7 @@ th {
 
 .select {
   border: none;
-  background-color: #215e30;
+  background-color: #9f2112;
   color: white;
   cursor: pointer;
   width: 80px;
@@ -123,7 +148,7 @@ th {
 }
 
 .select:hover {
-  background-color: #3eb25b;
+  background-color: #d45242;
 }
 
 .submit {background-color: #2196F3;} /* Blue */

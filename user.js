@@ -136,22 +136,19 @@ function editMember() {
   // edit it for "local Storage"
   localStorage.setItem('user-list', JSON.stringify(oldItems));
 
-  // edit it for "DOM"
-  /*
+  // edit it for "DOM" // ugly:
+  $("#user-list > tbody").html("");
+  fillUsers(oldItems);
+  /*  IT FAILED:
   let xxx = $(selectedUser).parent().parent();
-  $(selectedUser).parent().css('visibility','visible');
   // xxx.css('visibility','visible');
   // xxx.css('background-color','red');
   $('xxx td:nth-child(1)').css('background-color','blue');
-  $('xxx:even').css('background-color','pink');
-  // $(`((document.querySelector('input[name="choose"]:checked')).parent()):nth-child(2)`).css('background-color','red');
   $('table > tbody > tr td:nth-child(2)').children().css("background-color","pink");
-  /// let tr = $(selectedUser).parent().parent();
-  /// (tr:nth-child(3)).remove();
-  // $("#user-list > tbody:last-child").append(str);
   */
-  // $('.afterHint').hide();
-  // $('#remove .messages').show();
+  
+  $('.afterHint').hide();
+  $('#edit .messages').show();
 }
 
 
