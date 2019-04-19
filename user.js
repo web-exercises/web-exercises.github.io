@@ -183,6 +183,7 @@ function selectBtn(task){
   dealWithRadioButtons(task);
   dealWithHints();
   showTheRightForm(task);
+  $('.hiddenForms input').val(''); // clear inputs
 
   function dealWithRadioButtons(task){
     //uncheck all:
