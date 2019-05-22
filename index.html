@@ -16,9 +16,6 @@
 
     <!-- Style Css -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/general.css">
 </head>
 
@@ -34,7 +31,7 @@
 
         <div class="nav-scroller py-1 mb-2">
   
-            <nav class="nav d-flex justify-content-between" style="margin: 0px 100px">
+            <nav id="headnav" class="nav d-flex justify-content-between" style="margin: 0px 100px">
 
 
                 <div id="drop" class="dropdown">
@@ -53,31 +50,13 @@
                 <a class="p-2 topnav" href="#Skills">Skills</a>
                 <a class="p-2 topnav" href="#Programming">Programming languages</a>
                 <a class="p-2 topnav" href="#Contact">Contact</a>
-              
-                <div class="col-4 d-flex justify-content-end align-items-center">
+            
+                <div class="col-4 d-flex justify-content-end align-items-center" style="float: right;">
                     <a id="download-cv" class="btn btn-md btn-outline-secondary" href="https://github.com/miladkhaari/miladkhaari.github.io/raw/master/CV.pdf">Download my CV</a>
                 </div>
 
             </nav>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -92,8 +71,8 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="content">
-                                    <h3 class="wow newFadeInUp" data-wow-duration="1s" data-wow-delay="500ms">hello!</h3>
-                                    <h1 class="wow newFadeInUp" data-wow-duration="1s" data-wow-delay="1s">I’m Milad Khaari</h1>
+                                    <h3 class="wow newFadeInUp" data-wow-duration="1s" data-wow-delay="500ms">Hello!</h3>
+                                    <h2 class="wow newFadeInUp title" data-wow-duration="1s" data-wow-delay="1s">I’m Milad Khaari</h2>
                                     <p class="wow newFadeInUp" data-wow-duration="1s" data-wow-delay="2s">
                                     I'm a fresh programmer with both front-end and back-end skills, while having a preference for front-end development. This is my blog to introduce myself and repressent my Curriculum vitae and recent projects. I don't have the exprience to work in a company yet, but have self-studied and experienced building up websites and learned how to handle new problems along the road. If there's a chance for cooperation, I'd be glad to get in touch and apply for the job.</p>
                                 </div>
@@ -126,36 +105,33 @@
 
 
 
-
-
-
-
- <!-- Start Story Area -->
+            <!-- Start Story Area -->
             <div class="rn-story-area d-flex bg_color--1 mt--5">
                 <div class="rn-story-right w-50 d-flex align-items-center">
                     <div class="story-style--3 story-content text-left rn-plr--160 section-ptb-xl">
                         <div class="content text-left">
                             <h2 class="section-title wow newFadeInUp" data-wow-duration="1s" data-wow-delay="500ms">Programming</h2>
                             <p class="wow newFadeInUp"  data-wow-duration="1s" data-wow-delay="800ms">
-                                Front-End: <br>
-                                <ul>
-                                    <li> <strong>HTML</strong>5, </li>
-                                    <li> <strong>CSS</strong>3, <strong>SASS</strong>, 
-                                        <strong>Bootstrap</strong> </li>
-                                    <li> <strong>JavaScript</strong> (ES6), <strong>jQuery</strong> </li>
-                                </ul>
-                                
-                                Back-End: <br>
-                                <ul>
-                                    <li> <strong>Python</strong>, <strong>Django</strong> , django-REST-framework </li> 
-                                    <li>Familiar with: <strong>C</strong>, <strong>C++</strong></li>
+                                <ul class="uls">
                                 </ul>
 
-                                Also:
-                                <ul>
-                                    <li>Good understanding of <strong>HTTP</strong> protocol</li>
+
+
+                                Front-End: <br>
+                                <ul class="uls">
+                                    <li> HTML5</li>
+                                    <li> CSS3, SASS, Bootstrap</li>
+                                    <li> JavaScript (ES6), jQuery</li>
+                                    <li> ReactJS</li>
                                 </ul>
-                                <hr>
+                                <br>
+                                Back-End: <br>
+                                <ul class="uls">
+                                    <li> Python</li>
+                                    <li> Django, django-REST-framework </li> 
+                                    <li> Familiar with C, C++</li>
+                                </ul>
+
                             </p>
                         </div>
                     </div>
@@ -163,27 +139,6 @@
                 <div class="rn-story-left w-50 rn-story-bg-wrapper" style="background-image: url(img/mug.jpg); background-size: 400px; background-repeat: no-repeat;"></div>
             </div>
             <!-- End Story Area -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -198,7 +153,8 @@
                             Familiar with Linux and Bash<br>
                             Familiar with Git version control<br>
                             Know about Agile and Scrum methods<br>
-                            Fully understanding of English</p>
+                            Fully understanding of English<br>
+                            Good understanding of HTTP protocol</p>
                         </div>
                     </div>
                 </div>
@@ -264,23 +220,27 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="footer-widget footer-right quicklink">
                                                 <h3 class="ft-title">Quick Link</h3>
-                                                <div class="content">
+                                                <div id="iconpics" class="content">
                                                     <ul class="quick-link">
-                                                        <li><a href="#">Info</a></li>
-                                                        <li><a href="#">About</a></li>
-                                                        <li><a href="#">Services</a></li>
+                                                        <li><a href="#"><img src="img/github.svg" alt="github icon" style="width:30px;"></a></li>
+                                                        <li><a href="#"><img src="img/linkedin.png" alt="linkedin icon" style="width:30px;"></a></li>
+                                                        <li><a href="#"><img src="img/email.png" alt="email icon" style="width:35px;"></a></li>
+
+                                                        <a href="#">
+                                                            <div class="scrolltotop">
+                                                                <div class="arrow-top"></div>
+                                                                <div class="arrow-top-line"></div>
+                                                            </div>
+                                                        </a>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
 
+
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="scrolltotop">
-                            <div class="arrow-top"></div>
-                            <div class="arrow-top-line"></div>
                         </div>
                     </div>
                 </div>
@@ -291,14 +251,9 @@
         </main>
         <!--// Page Conttent -->
         
-        
     </div>
-
     <!--// Wrapper -->
 
-    <!-- Js Files -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="user.js"></script>
-
 </body>
 </html>

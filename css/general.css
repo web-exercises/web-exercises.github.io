@@ -1,5 +1,11 @@
-/*
 
+
+.title {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1;
+}
+/*
 @font-face {
     font-family: Anton;
     src: url("Anton-Regular.ttf");
@@ -11,58 +17,38 @@ body p {
     color: #000;
 }
 
-body {
-    background-color: #fcfcfc;
-    background-color: #fff;
-    color: #000;
-}
-
-#milad-header {
-	font-family: 'Anton', sans-serif;
-}
-
-#logo {
-	width: 30px;
-	height: 30px;
-	position: relative;
-	top: 6px;
-}
-
-#footerlogo {
-	width: 50px;
-	height: 50px;
-	position: relative;
-	margin-bottom: 10px;
-}
-
 */
+.uls{
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20px;
+}
+
+#headnav a{
+    color: #008B8B;
+}
+
+#headnav > a:hover{
+    text-decoration: underline #b22222;
+}
+
+#wrapper > div > nav > a:last-child:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+#download-cv{
+    border-color: #008B8B;
+    white-space: nowrap;
+}
 
 #download-cv:hover{
     text-decoration: none;
     background-color: #008B8B;
+    color: #fff; !important
 }
 
-.topnav{
-    /*color: #6c757d;*/
-    color: #008B8B;
-}
-.topnav:hover{
-    text-decoration: none;
-    color: #b22222;
-}
-/*
-main h2 {
-    font-family: 'Anton', sans-serif;
-    color: #fff;
-    background-color: #38414f;
-    padding: 1px 7px 1px 35px;
-    display:inline-block;
-}
-
-main strong {
-    text-shadow: 0 0 1px #fff;
-}
-*/
+/***************************************/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -98,7 +84,7 @@ main strong {
 
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #007bff; color: #fff;}
+/*.dropdown:hover .dropbtn {background-color: #007bff; color: #fff;}*/
 
 @media screen and (max-width: 1200px) {
     .topnav {
@@ -121,7 +107,7 @@ main strong {
     #dropbutton {
         opacity: 0.5;
         z-index: 2;
-        background-color: #007bff;
+        /*background-color: #007bff;*/
         color: white;
     }
     #dropbutton:hover {
@@ -141,17 +127,3 @@ main strong {
   0%   {left:0px;}
   25%  {left:16px;}
 }
-/*
-.footer{
-  background: rgb(42,39,48);
-  background-color: #38414f;
-  color: #fff;
-  padding: 40px ;
-}
-
-.footer p, #caption {
-  color: #fff;
-}
-
-
-*/

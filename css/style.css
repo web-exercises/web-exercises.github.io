@@ -94,7 +94,7 @@ textarea {
   font-family: "Source Sans Pro", Helvetica, sans-serif; }
 
 a {
-  color: #ca3c08;
+  /*color: #ca3c08;*/
   text-decoration: none; }
 
 a:visited {
@@ -376,9 +376,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: #000000;
   font-weight: 400; }
-
-a {
-  transition: all 0.4s ease-in-out 0s; }
 
 h1,
 h2,
@@ -4164,7 +4161,7 @@ ul.social-icon {
   margin-bottom: 40px; }
 .slider--3 .content p {
   color: #2e2e2d;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 30px;
   font-size: 18px;
   margin: 0; }
