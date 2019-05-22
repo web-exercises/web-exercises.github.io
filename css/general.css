@@ -1,5 +1,4 @@
 
-
 .title {
   font-size: 62px;
   font-weight: 700;
@@ -26,6 +25,9 @@ body p {
 
 #headnav a{
     color: #008B8B;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 #headnav > a:hover{
@@ -40,6 +42,7 @@ body p {
 #download-cv{
     border-color: #008B8B;
     white-space: nowrap;
+    text-transform: none;
 }
 
 #download-cv:hover{
