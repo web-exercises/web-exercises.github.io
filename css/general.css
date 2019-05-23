@@ -1,4 +1,31 @@
 
+  .underwonder a {
+    /*display: inline-block;*/
+    line-height: 24px;
+    position: relative; }
+    .underwonder a::after {
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      position: absolute;
+      left: auto;
+      right: 0;
+      z-index: 1;
+      -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+      transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+      /*background: #000000;*/
+      background: #b22222;
+      content: ""; }
+    .underwonder a:hover::after {
+      width: 100%;
+      left: 0;
+      right: auto; }
+
+
+
+
+
+
 .title {
   font-size: 62px;
   font-weight: 700;
@@ -34,6 +61,11 @@ body p {
     text-decoration: underline #b22222;
 }
 
+#headnav > div:last-child{
+    margin-top: -10px;
+    /*text-transform: none;*/
+}
+
 #wrapper > div > nav > a:last-child:hover{
     color: #fff;
     text-decoration: none;
@@ -42,11 +74,11 @@ body p {
 #download-cv{
     border-color: #008B8B;
     white-space: nowrap;
-    text-transform: none;
+    /*text-transform: none;*/
 }
 
 #download-cv:hover{
-    text-decoration: none;
+    /*text-decoration: none;*/
     background-color: #008B8B;
     color: #fff; !important
 }
